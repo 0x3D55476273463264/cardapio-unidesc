@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: black;
+  --background-url: url(./assets/background.png);
+  --stroke-color: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.507);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+  background: var(--background-url) no-repeat top center/cover;
+  height: 100vh;
+}
+
+body * {
+  font-family: "inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 14px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  margin: 15px 2px;
+
+}
+
+#pwi {
+  color: white;
+  font-family: 'Fredoka';
+  font-weight: 400;
+}
+
+#burguers {
+  color: orange;
+  font-family: 'Fredoka';
+  font-weight: 600;
+}
+
+
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 9px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#cardapio {
+  color: white;
+  font-family: "inter";
+  font-weight: 500;
+  margin: 0 px; 
+  text-align: center; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 40px;
+}
+
+#sanduiche img {
+  width: 80px;
+}
+
+#esquerda{
+  float: left;
+  align-items: center;
+}
+
+#direita {
+  float: right;
+  align-items: center;
+}
+
+#prod {
+  display: flex;
+  flex-direction: column;
+}
+
+#sanduiche h2 {
+  margin: 0 4px;
+  color: orange;
+  font-family: "inter";
+  font-weight: 500;
+}
+
+#ingred {
+  color: white;
+  font-family: "inter";
+  font-weight: 400;
+  margin: 0 4px;
+}
+
+#desc {
+  text-align: left;
+}
+
+#value {
+  color: orange;
+  text-align: right;
+  font-family: "inter";
+  font-weight: 500; 
+  font-size: 25px; 
+  margin: 10px;
+}
+
+
+/* social */
+
+
+
+
+
+
+
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#links {
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social a:hover {
+  background: var(--highlight-color);
+}
+
+#base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
